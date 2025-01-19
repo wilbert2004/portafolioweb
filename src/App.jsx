@@ -1,12 +1,8 @@
-import hola from "./components/hola";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+
 function App() {
-  return (
-    <div className="App">
-      <h1>hola mundo </h1>
-      <hola />
-      <h3>hola</h3>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
