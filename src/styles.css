@@ -1,7 +1,85 @@
-.fondo {
-    background-color: #f1f1f1; /* Color de fondo */
-    color: #333;              /* Color de texto */
-    padding: 20px;            /* Espaciado interno */
-    font-family: Arial, sans-serif; /* Fuente */
-  }
-  
+/* Importación de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Clase base para la fuente Inter */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-inter-bold {
+  font-weight: 700; /* Negrita */
+}
+
+/* Contenedor principal */
+.menu-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Imagen a la izquierda y enlaces a la derecha */
+  padding: 10px 20px;
+  background-color: #ffffff; /* Fondo opcional */
+  position: fixed; /* Fija el menú en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto visual */
+}
+
+/* Sección de la imagen */
+.profile-section {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+}
+
+.circle {
+  width: 70px; /* Tamaño de la imagen */
+  height: 70px;
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor circular */
+  margin-right: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+/* Sección del menú */
+.nav-section {
+  display: flex;
+  margin-right: 40px; /* Espaciado entre la imagen y el texto */
+}
+
+.menu-list {
+  display: flex; /* Hace que los elementos estén en fila */
+  gap: 70px; /* Espaciado entre los enlaces */
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li a {
+  text-decoration: none; /* Elimina subrayado */
+  font-weight: bold; /* Estilo de la fuente */
+  padding: 5px 10px; /* Espaciado alrededor del texto */
+  transition: color 0.3s ease; /* Transición de color */
+}
+
+.menu-list li a:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo global para el fondo */
+html, body {
+  height: 100%; /* Asegura que el cuerpo ocupe toda la pantalla */
+  margin: 0; /* Eliminar márgenes predeterminados */
+  font-family: 'Inter', sans-serif; /* Opcional: Configurar la fuente global */
+}
+
+body {
+  background-color: #F1F1F1 !important; /* Forzar el color de fondo */
+  padding-top: 100px; /* Asegura que el contenido no quede debajo del navbar fijo */
+}
+
+
+.ventanila {
+  width: 100em;
+  height: 500em;
+  border: 10px solid black !important;
+  background-color: black;
+}

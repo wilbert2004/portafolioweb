@@ -1,27 +1,33 @@
 import React from "react";
-import { Link } from "react-scroll";
+import imgperfil from "../image/PERFIL.jpg";
 
 const Menu = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="acercade" smooth={true} duration={500}>
-            Acerca de
-          </Link>
-        </li>
-        <li>
-          <Link to="contacto" smooth={true} duration={500}>
-            Contacto
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="menu-container">
+      <div className="profile-section">
+        <img src={imgperfil} alt="fotoperfil" className="circle" />
+        <h3 className="font-inter-bold">WILBERT OLIVER CHAN</h3>
+      </div>
+      <nav className="nav-section">
+        <ul className="menu-list">
+          <li>
+            <a href="#home" className="font-inter-bold">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#acerca" className="font-inter-bold">
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a href="#Contact" className="font-inter-bold">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
