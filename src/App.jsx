@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Home from "./components/Home";
+import Home from "./components/home";
 import Acerca from "./components/Acerca";
 import Contact from "./components/Contact";
 import Menu from "./components/menu";
