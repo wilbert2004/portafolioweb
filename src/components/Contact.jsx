@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import Footer from "./Footer"; // Asegúrate de que la ruta es correcta
 const Contact = () => {
   const [form, setForm] = useState({
     nombre: "",

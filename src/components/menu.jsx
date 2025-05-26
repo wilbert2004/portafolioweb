@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import imgperfil from "../image/PERFIL.jpg"; // Asegúrate de que la ruta es correcta
 
 const Menu = () => {
