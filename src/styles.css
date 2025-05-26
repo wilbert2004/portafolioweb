@@ -82,3 +82,183 @@ body {
 }
 
 
+/* Estilo para el contenedor principal */
+
+/* Variables de color (Paleta profesional) */
+:root {
+  --primary: #1a2639; /* Azul oscuro sofisticado */
+  --secondary: #d4af37; /* Dorado elegante */
+  --accent: #3e4a61; /* Azul medio */
+  --text-light: #f0f4f8; /* Blanco suave */
+  --text-dark: #1a2639; /* Azul oscuro para contrastes */
+}
+
+/* Base del Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.95); /* Fondo semitransparente */
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Línea sutil dorada */
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+/* Foto de Perfil (Destacada) */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-pic {
+  width: 90px; /* Más grande que antes */
+  height: 90px;
+  margin-left: 10px; /* Espacio a la izquierda */
+  border-radius: 50%;
+  object-fit: cover;
+ 
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05); /* Efecto sutil al hover */
+}
+
+.profile-name {
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 1.4rem; /* Texto más grande */
+  letter-spacing: 1px;
+  margin: 0;
+  white-space: nowrap;
+  
+}
+
+/* Menú Hamburguesa (Ícono Grande) */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+  padding: 0.5rem;
+}
+
+/* Navegación Principal */
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem; /* Texto más legible */
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:hover {
+  color: var(--secondary);
+}
+
+
+
+.btn-cv:hover {
+  background: #e8c252; /* Dorado más claro */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .profile-name {
+    font-size: 1.2rem; /* Ajuste para tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Menú Hamburguesa Visible */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Menú Desplegable (Estilo Fullscreen Elegante) */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+    z-index: 1000;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .nav a {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  /* Foto sigue visible en móvil */
+  .profile-header {
+    z-index: 1002;
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+}
