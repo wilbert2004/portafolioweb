@@ -86,7 +86,7 @@ body {
 
 /* Variables de color (Paleta profesional) */
 :root {
-  --primary: #1a2639; /* Azul oscuro sofisticado */
+  --primary: #000000; /* Azul oscuro sofisticado */
   --secondary: #d4af37; /* Dorado elegante */
   --accent: #3e4a61; /* Azul medio */
   --text-light: #f0f4f8; /* Blanco suave */

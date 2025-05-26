@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+
 const Contact = () => {
   const [form, setForm] = useState({
     nombre: "",
@@ -17,13 +18,13 @@ const Contact = () => {
     emailjs
       .send(
         "service_gqvac5p", // Tu Service ID
-        "template_lmf99rw", // Tu Template ID (reemplaza esto)
+        "template_lmf99rw", // Tu Template ID
         {
           from_name: form.nombre,
           from_email: form.correo,
           message: form.mensaje,
         },
-        "UIexwsvoLp_9hdiLI" // Tu Public Key (reemplaza esto)
+        "UIexwsvoLp_9hdiLI" // Tu Public Key
       )
       .then(() => {
         setSuccess(true);
@@ -35,12 +36,9 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 "
-      id="contacto"
-    >
-      <p className="font-inter-bold text-4xl text-center ">CONTACTO</p>
-      <p className="text-2xl text-center m-10">
+    <div className="py-12 flex flex-col items-center bg-gray-100" id="contacto">
+      <p className="font-inter-bold text-4xl text-center">CONTACTO</p>
+      <p className="text-2xl text-center m-2">
         No dude en ponerse en contacto conmigo enviando el formulario a
         continuación.
       </p>

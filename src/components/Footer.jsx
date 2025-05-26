@@ -22,7 +22,7 @@ const Footer = () => {
           </h2>
           <div className="flex gap-6 text-2xl justify-center md:justify-start">
             <a
-              href="https://facebook.com/"
+              href="https://www.facebook.com/wilbert.chan.33821"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
@@ -30,7 +30,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/wilbert2004"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
@@ -38,7 +38,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/wilbert-oliver-chan-uc-028229314/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-400 transition"
@@ -46,7 +46,7 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="mailto:tucorreo@gmail.com"
+              href="mailto:olitouc@gmail.com"
               className="hover:text-purple-400 transition"
             >
               <SiGmail />
