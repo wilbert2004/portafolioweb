@@ -20,18 +20,30 @@ const Cards = () => {
     {
       id: 1,
       title: "Workfeel",
-      description: "Software de clima laboral desarrollado localmente.",
+      rol: "Desarrollador Frontend",
+      description:
+        "Software de clima laboral desarrollado localmente para medir y analizar el ambiente organizacional mediante encuestas anónimas. Incluye panel de administración, gestión de usuarios y generación de planes de acción.",
       images: [Encuestas, Generales, Logo1, Periodo],
       link: "http://workfeel.netlify.app",
-      tags: ["React", "Node.js", "Dashboard"],
+      tags: [
+        "React",
+        "Node.js",
+        "postresql",
+        "Express",
+        "Tailwind CSS",
+        "sequelize",
+        "typescript",
+      ],
     },
     {
       id: 2,
       title: "Semillarte",
-      description: "Página web estática desarrollada con React y Bootstrap.",
+      rol: "Diseño e implementación completa de la interfaz",
+      description:
+        'Página web informativa para el catálogo de semillas artesanales "Semillarte", desarrollada con React y Bootstrap. Totalmente responsive, con diseño moderno, secciones organizadas y una experiencia de usuario intuitiva.',
       images: [Catalogo, Contacto, Inicio, Nosotros, Ofrecemos],
       link: "https://innova-tecnm.netlify.app/",
-      tags: ["React", "Bootstrap", "Responsive"],
+      tags: ["React", "Bootstrap", "Responsive", "node.js", "javascript"],
     },
   ]);
 
@@ -91,6 +103,7 @@ const Cards = () => {
                   <h3 className="text-xl font-bold text-gray-900">
                     {item.title}
                   </h3>
+
                   <div className="flex flex-wrap gap-2">
                     {item.tags.map((tag, i) => (
                       <span
@@ -104,6 +117,10 @@ const Cards = () => {
                 </div>
 
                 <p className="mt-3 text-gray-600">{item.description}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  <span className="font-semibold text-purple-700">Rol:</span>{" "}
+                  {item.rol}
+                </p>
 
                 <div className="mt-6">
                   <a

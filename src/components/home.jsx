@@ -6,11 +6,13 @@ const home = () => {
         HOLA ,SOY WILBERT CHAN UC
       </p>
       <p className="font-inter text-2xl text-center m-10">
-        Un desarrollador web apasionado por crear experiencias interactivas y
-        funcionales.
-        <br /> Diseño y desarrollo sitios web orientados a resultados, ayudando
-        a transformar ideas
-        <br /> en productos digitales exitosos.
+        Soy Wilbert Chan, estudiante de Ingeniería en Sistemas apasionado por el
+        desarrollo frontend con React. <br /> Me gusta construir experiencias
+        interactivas, limpias y funcionales. Tengo experiencia desarrollando
+        software desde cero, <br />
+        integrando bases de datos, API REST, autenticación y diseño responsive.
+        Estoy buscando mi primera oportunidad laboral <br /> como desarrollador
+        web junior, donde pueda seguir creciendo y aportar mis habilidades
       </p>
 
       {/* incluimos dos botones aca okey  */}
@@ -19,9 +21,9 @@ const home = () => {
           <div>
             <a
               className="bg-purple-500 hover:bg-purple-700 transition text-white py-2 px-10 rounded inline-block text-center"
-              href="#contacto"
+              href="mailto:olitouc@gmail.com?subject=Oportunidad%20de%20Desarrollador%20Web%20Junior"
             >
-              Contacto
+              Contactame
             </a>
           </div>
           <div>
