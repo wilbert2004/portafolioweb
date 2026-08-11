@@ -14,7 +14,19 @@ import Inicio from "../image/Semillarte/Inicio.png";
 import Logo1 from "../image/Worfeel/logo1.png";
 import Nosotros from "../image/Semillarte/Nosotros.png";
 import Ofrecemos from "../image/Semillarte/Ofrecemos.png";
+//importamos las imagenes de Absolute Systems
+import Login from "../image/Absolute_Systems/login.png";
+import Inicio1 from "../image/Absolute_Systems/inicio.png";
+import Inventario from "../image/Absolute_Systems/inventario.png";
+import Multicaja from "../image/Absolute_Systems/multicaja.png";
+import Impresora from "../image/Absolute_Systems/impresora.png";
 
+//importamos las imagenes del sistema de gestion de bienes
+import Login1 from "../image/Gestion_Bienes/login.png";
+import Inicio2 from "../image/Gestion_Bienes/inicio.png";
+import bienes from "../image/Gestion_Bienes/bienes.png";
+import salidas from "../image/Gestion_Bienes/salidas.png";
+import acercade from "../image/Gestion_Bienes/acerca.png";
 const Cards = () => {
   const [dat] = useState([
     {
@@ -44,6 +56,40 @@ const Cards = () => {
       images: [Catalogo, Contacto, Inicio, Nosotros, Ofrecemos],
       link: "https://innova-tecnm.netlify.app/",
       tags: ["React", "Bootstrap", "Responsive", "node.js", "javascript"],
+    },
+    {
+      id: 3,
+      title: "Absolute Systems",
+      rol: "Desarrollo de modulos del frontend y diseño de la interfaz",
+      description:
+        'Punto de venta y sistema de inventario para la empresa "Absolute Systems", desarrollado con React y Tailwind. Incluye gestión de productos, ventas, reportes y un diseño moderno y funcional. Actualmente en desarrollo, con planes de agregar más funcionalidades y mejoras en la experiencia del usuario.',
+      images: [Login, Inicio1, Inventario, Multicaja, Impresora],
+      link: "https://absolutesystems.dev/",
+      tags: [
+        "React js",
+        "Tailwind",
+        "Electron",
+        "node.js",
+        "javascript",
+        "SQLite",
+      ],
+    },
+    {
+      id: 3,
+      title: "Sistema de Gestion De Bienes",
+      rol: "Desarrollador Frontend y Backend para la gestión de bienes",
+      description:
+        "Sistema de gestión de bienes desarrollado con React y Tailwind. Permite la administración eficiente de inventarios, seguimiento de activos y generación de reportes. Incluye funcionalidades para agregar, editar y eliminar bienes, así como la integración con bases de datos para un manejo seguro y confiable de la información de la empresa cede Valladolid Yucatan sistema ejecutable en electron js.",
+      images: [Login1, Inicio2, bienes, salidas, acercade],
+      link: "---",
+      tags: [
+        "Electron",
+        "node.js",
+        "javascript",
+        "SQLite",
+        "React js",
+        "Tailwind",
+      ],
     },
   ]);
 

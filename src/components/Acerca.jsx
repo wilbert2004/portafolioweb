@@ -11,7 +11,13 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 
-import { SiMysql, SiPostgresql } from "react-icons/si";
+import {
+  SiMysql,
+  SiPostgresql,
+  SiElectron,
+  SiTailwindcss,
+  SiSqlite,
+} from "react-icons/si";
 
 const Acerca = () => {
   return (
@@ -115,6 +121,24 @@ const Acerca = () => {
                 <IoLogoFirebase size={32} />
                 <span className="w-full text-center text-xs font-semibold flex-1 flex items-center justify-center h-full">
                   FIREBASE
+                </span>
+              </div>
+              <div className="flex flex-col items-center bg-pink-500 w-20 h-24 rounded p-2 text-white justify-center transition-all duration-200 hover:bg-pink-700 cursor-pointer">
+                <SiElectron size={32} />
+                <span className="w-full text-center text-xs font-semibold flex-1 flex items-center justify-center h-full">
+                  Electron
+                </span>
+              </div>
+              <div className="flex flex-col items-center bg-pink-500 w-20 h-24 rounded p-2 text-white justify-center transition-all duration-200 hover:bg-pink-700 cursor-pointer">
+                <SiTailwindcss size={32} />
+                <span className="w-full text-center text-xs font-semibold flex-1 flex items-center justify-center h-full">
+                  Tailwind
+                </span>
+              </div>
+              <div className="flex flex-col items-center bg-pink-500 w-20 h-24 rounded p-2 text-white justify-center transition-all duration-200 hover:bg-pink-700 cursor-pointer">
+                <SiSqlite size={32} />
+                <span className="w-full text-center text-xs font-semibold flex-1 flex items-center justify-center h-full">
+                  SQLite
                 </span>
               </div>
             </div>
