@@ -75,13 +75,13 @@ const Cards = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Sistema de Gestion De Bienes",
       rol: "Desarrollador Frontend y Backend para la gestión de bienes",
       description:
         "Sistema de gestión de bienes desarrollado con React y Tailwind. Permite la administración eficiente de inventarios, seguimiento de activos y generación de reportes. Incluye funcionalidades para agregar, editar y eliminar bienes, así como la integración con bases de datos para un manejo seguro y confiable de la información de la empresa cede Valladolid Yucatan sistema ejecutable en electron js.",
       images: [Login1, Inicio2, bienes, salidas, acercade],
-      link: "---",
+      link: "Privado",
       tags: [
         "Electron",
         "node.js",
